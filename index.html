@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vacation Planner</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div style="display: flex; flex-direction: column; align-items: center">
-      <label>Location: </label>
+      <label>Location:</label>
       <input
         placeholder="Type your Location..."
         type="text"
         id="userLocation"
         style="width: 200px"
       />
-      <button onclick="getLocation()" style="height: 30px; width: 100px">
+      <button onclick="getRecommendations()" style="height: 30px; width: 100px">
         Come Explore
       </button>
     </div>
+    <div id="response" style="margin-top: 20px; text-align: center"></div>
 
     <script src="script.js"></script>
   </body>
