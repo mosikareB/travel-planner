@@ -11,7 +11,7 @@ async function getRecommendations() {
   }
 
   try {
-    const response = await fetch("http://localhost:4000/getRecommendations", {
+    const response = await fetch("https://travel-planner-1um0.onrender.com/getRecommendations", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
