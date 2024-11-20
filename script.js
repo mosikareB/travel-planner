@@ -1,3 +1,4 @@
+let userLoc=document.getElementById("userLocation");
 function getLocation(){
-  console.log(document.getElementById("userLocation").value);
+  console.log(userLoc.value);
 }
