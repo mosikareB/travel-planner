@@ -2,17 +2,22 @@
 <html>
   <head>
     <title>Vacation Planner</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
+    <div style="display: flex; flex-direction: column; align-items: center">
       <label>Location: </label>
       <input
         placeholder="Type your Location..."
         type="text"
         id="userLocation"
-      /><br /><br />
-      <button onclick="getLocation()">Come Explore</button>
-      <script src="script.js"></script>
+        style="width: 200px"
+      />
+      <button onclick="getLocation()" style="height: 30px; width: 100px">
+        Come Explore
+      </button>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
