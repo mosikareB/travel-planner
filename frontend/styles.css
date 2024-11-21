@@ -1,0 +1,19 @@
+@import url("https://fonts.cdnfonts.com/css/pp-neue-montreal");
+
+
+/* .bground {
+  background-image: url("/Assets/bg-image.png");
+  background-size: cover;
+} */
+
+.mainHead {
+  font-family:'Franklin Gothic';
+  font-size: 50px;
+}
+.para1{
+  font-family: "PP Neue Montreal";
+  font-size: 30px;
+  font-weight: 500;
+}
+
+

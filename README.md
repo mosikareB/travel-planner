@@ -1,4 +1,4 @@
-#  Travel Planner Website
+# Travel Planner Website
 
 ## 🌐 Overview
 
@@ -47,7 +47,7 @@ To run this project locally, ensure you have:
 2. Navigate to the Project Directory:
 
 ```shell
-  cd Kran-Z
+  cd travel-planner
 ```
 
 3. Set Up API Keys:
