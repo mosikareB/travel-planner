@@ -7,8 +7,25 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">Vacation Planner</a>
+        <!-- Link to Home Page -->
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <!-- Link to Home Page -->
+        <a href="auth.html">Login/Register</a>
+        <!-- Link to Login/Register Page -->
+        <a href="about.html">About Us</a>
+        <!-- Link to About Us Page -->
+        <a href="contact.html">Contact Us</a>
+        <!-- Link to Contact Page -->
+      </div>
+    </div>
     <div style="display: flex; flex-direction: column; align-items: center">
-      <a href="./auth.html"><button>Login/Register</button></a>
+      <br>
       <label>Location:</label>
       <input
         placeholder="Type your Location..."
@@ -16,7 +33,8 @@
         id="userLocation"
         style="width: 200px"
       />
-      <button onclick="getRecommendations()" style="height: 30px; width: 100px">
+      <br>
+      <button onclick="getRecommendations()" style="height: 50px; width: 150px">
         Come Explore
       </button>
     </div>
@@ -30,6 +48,17 @@
       </div>
     </div>
 
+    <!-- Footer -->
+    <div class="footer">
+      <p>&copy; 2024 Vacation Planner | All rights reserved.</p>
+      <p>
+        Follow us on
+        <a href="https://twitter.com" target="_blank">Twitter</a>,
+        <a href="https://facebook.com" target="_blank">Facebook</a>, and
+        <a href="https://instagram.com" target="_blank">Instagram</a>.
+      </p>
+    </div>
+    
     <script src="script.js"></script>
   </body>
 </html>
