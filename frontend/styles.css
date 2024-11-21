@@ -1,19 +1,105 @@
 @import url("https://fonts.cdnfonts.com/css/pp-neue-montreal");
 
-
 /* .bground {
   background-image: url("/Assets/bg-image.png");
   background-size: cover;
 } */
 
-.mainHead {
-  font-family:'Franklin Gothic';
-  font-size: 50px;
-}
-.para1{
-  font-family: "PP Neue Montreal";
-  font-size: 30px;
-  font-weight: 500;
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
 }
 
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0073e6;
+  padding: 10px 20px;
+  color: white;
+}
 
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Styles */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+button {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+.input-box {
+  width: 200px;
+  margin-top: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.explore-btn {
+  margin-top: 10px;
+  height: 30px;
+  width: 100px;
+}
+
+/* Response Styles */
+.response {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* About Us Link */
+.about-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about-btn {
+  font-size: 18px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ddd;
+}
+
+.footer a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
