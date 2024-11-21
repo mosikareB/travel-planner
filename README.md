@@ -76,7 +76,7 @@ To run this project locally, ensure you have:
 
 ## 📂 Project Structure
 
-```shell
+```
 📁 travel-planner
 |-- 📁 Frontend
 |   |-- 📁 .github
