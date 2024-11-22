@@ -1,6 +1,8 @@
 import "./globals.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import Navbar from "@/components/Navbar";
 import { Toaster } from "react-hot-toast";
+import { Providers } from "./providers";
 const inter = Plus_Jakarta_Sans({
   subsets: ["latin"],
   display: "swap",
@@ -14,8 +16,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${inter.variable} antialiased`}>
-        <Toaster />
-        {children}
+        <Providers>
+          <Navbar />
+          <Toaster />
+          {children}
+        </Providers>
       </body>
     </html>
   );

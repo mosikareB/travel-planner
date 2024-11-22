@@ -1,20 +1,17 @@
 import React from "react";
 import { NEXT_AUTH_CONFIG } from "@/lib/auth";
 import { getServerSession } from "next-auth";
+import Link from "next/link";
 
 export default async function Navbar() {
   const session = await getServerSession(NEXT_AUTH_CONFIG);
-//  console.log(session);
 
   return (
-    <div className="flex justify-between mx-16 my-6 py-2 gap-x-12">
-      <div className="flex justify-between items-center w-[40%]">
-        <h1>Travel Planner</h1>
-        <h2>Markets</h2>
-        <h2>Spots</h2>
-        <h2>Restaurants</h2>
+    <div className="flex justify-between mx-8 my-6 py-2 gap-x-12">
+      <div className="flex justify-between items-center gap-x-12">
+        <h1 className="font-bold">Travel Planner</h1>
+        <Link href={"/my-locations"}>My Locations</Link>
       </div>
-
 
       <div className="flex items-center justify-center">
         {session === null ? (

@@ -6,7 +6,7 @@ const tripSchema = new mongoose.Schema({
     ref: "User",
     required: true,
   },
-  destination: {
+  location: {
     type: String,
     required: true,
   },
