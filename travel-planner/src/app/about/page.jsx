@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - Vacation Planner</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+export default function Page() {
+  return (
     <div class="about-container">
       <h2>About Us</h2>
       <p>
@@ -16,12 +9,13 @@
         customized suggestions to ensure your next trip is truly memorable.
       </p>
       <p>
-        <!--BIO-->
         Our team is made up of passionate travel enthusiasts who believe in the
         power of exploring new places. We're here to inspire and assist you in
         planning your next great journey.
       </p>
-      <a href="index.html"><button>Back to Home</button></a>
+      <a href="/">
+        <button>Back to Home</button>
+      </a>
     </div>
-  </body>
-</html>
+  );
+}
