@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "npm install --force",
-    "start": "next start",
+    "dev": "npm install --legacy-peer-deps && next dev --turbopack",
+    "build": "npm install --legacy-peer-deps",
+    "start": "npm install --legacy-peer-deps && next start",
     "lint": "next lint"
   },
   "dependencies": {
