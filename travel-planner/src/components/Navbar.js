@@ -9,18 +9,26 @@ export default async function Navbar() {
   return (
     <div className="flex justify-between mx-8 my-6 py-2 gap-x-12">
       <div className="flex justify-between items-center gap-x-12">
-        <h1 className="font-bold">Travel Planner</h1>
+        <Link href={"/"} className="font-bold">Travel Planner</Link>
         <Link href={"/my-locations"}>My Locations</Link>
       </div>
 
       <div className="flex items-center justify-center">
         {session === null ? (
-          <a
-            href="/api/auth/signin"
-            className="py-2 px-6 rounded-lg border border-blue-600"
-          >
-            SignIn
-          </a>
+          <>
+            <a
+              href="/api/auth/signin"
+              className="py-2 px-6 rounded-lg border border-blue-600"
+            >
+              SignIn
+            </a>
+            <a
+              href="/signup"
+              className="py-2 px-6 rounded-lg border border-yellow-600"
+            >
+              SignUp
+            </a>
+          </>
         ) : (
           <a
             href="/api/auth/signout"
