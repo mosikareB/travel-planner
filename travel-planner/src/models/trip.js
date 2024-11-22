@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const tripSchema = new mongoose.Schema({
   userId: {
@@ -36,4 +36,6 @@ const tripSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Trip", tripSchema);
+const Trip = mongoose.models.trips || mongoose.model("Trip", tripSchema);
+
+export default Trip;
