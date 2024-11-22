@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "npm install --legacy-peer-deps",
+    "build": "npm install --force",
     "start": "next start",
     "lint": "next lint"
   },
